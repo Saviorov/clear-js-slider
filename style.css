@@ -1,0 +1,94 @@
+.reviews {
+    margin-top: 15%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.reviews__title {
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.reviews__wrapper {
+    max-width: 800px;
+    position: relative;
+    padding-top: 40px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.slide {
+    padding: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    display: none;
+    animation: 1s show ease;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slide__image {
+    text-align: center;
+}
+
+.slide__image img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.dots__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    height: 20px;
+    width: 20px;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+#btn-prev,
+#btn-next {
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transition: opacity .5s ease-in-out;
+}
+
+#btn-prev:hover,
+#btn-next:hover {
+    opacity: 0.6;
+}
+
+#btn-next {
+    left: 82%;
+    right: 0;
+}

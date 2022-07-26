@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Reviews-slider</title>
+</head>
+
+<body>
+
+    <div class="reviews">
+        <div class="reviews__title">Reviews Slider.</div>
+
+        <div class="reviews__wrapper">
+            <div class="slide active">
+                <div class="slide__image">
+                    <img src="images/image-1.jpg" alt="" class="slide-img">
+                </div>
+                <div class="slide__review">
+                    <p>Работа сделана замечательно! Нареканий нет!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__image">
+                    <img src="images/image-2.jpg" alt="" class="slide-img">
+                </div>
+                <div class="slide__review">
+                    <p>Быстро и качественно. Спасибо. Удачи в продвижении!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide__image">
+                    <img src="images/image-3.jpg" alt="" class="slide-img">
+                </div>
+                <div class="slide__review">
+                    <p>Выгодная цена, качественно и быстро сделано, рад что нашел такого исполнителя!</p>
+                </div>
+            </div>
+            <div id="btn-prev" class="reviews-prev__button"><i class="fa-solid fa-arrow-left"></i></div>
+            <div id="btn-next" class="reviews-next__button"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="dots__wrapper">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
